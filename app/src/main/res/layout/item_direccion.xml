@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="2dp"
+    android:paddingHorizontal="8dp">
+
+    <TextView
+        android:id="@+id/tvDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/direccion_detectada"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingBottom="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="1dp">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btnGoogleMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/google"
+            android:textColor="#1976D2"
+            android:layout_marginEnd="4dp"
+            android:maxWidth="120dp"
+            android:textAllCaps="false" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btnWaze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waze"
+            android:textColor="#1976D2"
+            android:layout_marginEnd="4dp"
+            android:maxWidth="120dp"
+            android:textAllCaps="false" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btnEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eliminar"
+            android:textColor="#000000"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

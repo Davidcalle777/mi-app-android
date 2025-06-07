@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Ruta</string>
+    <string name="titulo_direcciones">Direcciones</string>
+    <string name="ingrese_direccion">Ingrese una dirección</string>
+    <string name="agregar_direccion">Agregar</string>
+    <string name="ordenar_direcciones">Ordenar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="google_maps">Google Maps</string>
+    <string name="waze">Waze</string>
+    <string name="direccion">Dirección</string>
+    <string name="open_scanner">Abrir escáner</string>
+    <string name="add_address">Agregar Dirección</string>
+    <string name="detected_address_hint">Dirección detectada</string>
+    <string name="detected_address">Dirección detectada</string>
+    <string name="direccion_ejemplo">Calle 10 #5-30</string>
+    <string name="eliminar">Eliminar</string>
+
+    <!-- Cadenas nuevas que faltaban -->
+    <string name="direccion_detectada">Dirección detectada</string>
+    <string name="google">Google</string>
+    <string name="abrir_waze">Waze</string>
+
+    <string name="hint_direccion_manual">Escribe una dirección</string>
+    <string name="texto_detectado">Texto detectado</string>
+    <string name="abrir_escaner">Abrir Escáner</string>
+    <string name="ordenar_por_distancia">Ordenar por distancia</string>
+    <string name="ordenar_por_formato">Ordenar por formato</string>
+
+    <string name="agregar">Agregar</string>
+    <!-- strings.xml -->
+    <string name="texto_escaneado">Texto escaneado</string>
+
+
+
+
+</resources>

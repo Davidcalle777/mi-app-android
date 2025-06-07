@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#D6D6D6"
+    tools:context=".MainActivity">
+
+    <!-- Vista de cámara -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón para abrir escáner -->
+    <Button
+        android:id="@+id/btnOpenScanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/azul_oscuro_suave"
+        android:text="@string/abrir_escaner"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/previewView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Campo para ingresar dirección manual -->
+    <EditText
+        android:id="@+id/etDireccionManual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="@string/hint_direccion_manual"
+        android:inputType="textPostalAddress"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:autofillHints="postalAddress"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenScanner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto escaneado mostrado aquí -->
+    <TextView
+        android:id="@+id/tvDetectedText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Texto escaneado"
+        android:textColor="#212121"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/etDireccionManual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón para agregar dirección -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/agregar_direccion"
+        android:layout_marginTop="8dp"
+        android:background="@color/azul_oscuro_suave"
+        app:layout_constraintTop_toBottomOf="@id/tvDetectedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón para ordenar por distancia -->
+    <Button
+        android:id="@+id/btnOrdenar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ordenar_por_distancia"
+        android:layout_marginTop="8dp"
+        android:background="@color/azul_oscuro_suave"
+        app:layout_constraintTop_toBottomOf="@id/btnAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón para ordenar por formato -->
+    <Button
+        android:id="@+id/btnOrdenarFormato"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ordenar_por_formato"
+        android:layout_marginTop="8dp"
+        android:background="@color/azul_oscuro_suave"
+        app:layout_constraintTop_toBottomOf="@id/btnOrdenar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Lista de direcciones -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/btnOrdenarFormato"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
