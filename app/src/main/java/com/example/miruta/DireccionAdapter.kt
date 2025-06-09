@@ -12,7 +12,7 @@ class DireccionAdapter(private val direcciones: MutableList<Direccion>) :
 
     class DireccionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvDireccion: TextView = itemView.findViewById(R.id.tvDireccion)
-        val btnEliminar: Button = itemView.findViewById(R.id.btnEliminar)
+        val btnEliminar: Button = itemView.findViewById(R.id.btnBorrar)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DireccionViewHolder {

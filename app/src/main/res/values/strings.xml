@@ -14,7 +14,7 @@
     <string name="detected_address_hint">Dirección detectada</string>
     <string name="detected_address">Dirección detectada</string>
     <string name="direccion_ejemplo">Calle 10 #5-30</string>
-    <string name="eliminar">Eliminar</string>
+    <string name="Borrar">Borrar</string>
 
     <!-- Cadenas nuevas que faltaban -->
     <string name="direccion_detectada">Dirección detectada</string>

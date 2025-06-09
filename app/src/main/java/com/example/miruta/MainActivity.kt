@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             val tvDireccion: TextView = itemView.findViewById(R.id.tvDireccion)
             val btnGoogleMaps: Button = itemView.findViewById(R.id.btnGoogleMaps)
             val btnWaze: Button = itemView.findViewById(R.id.btnWaze)
-            val btnEliminar: Button = itemView.findViewById(R.id.btnEliminar)
+            val btnEliminar: Button = itemView.findViewById(R.id.btnBorrar)
         }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DireccionViewHolder {

@@ -45,10 +45,10 @@
 
         <Button
             style="?android:attr/borderlessButtonStyle"
-            android:id="@+id/btnEliminar"
+            android:id="@+id/btnBorrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/eliminar"
+            android:text="@string/Borrar"
             android:textColor="#000000"
             android:textAllCaps="false" />
     </LinearLayout>
